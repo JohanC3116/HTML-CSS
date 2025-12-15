@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: sans-serif;
   margin: 0px;
   padding: 0px;
@@ -40,9 +40,59 @@ nav a:hover {
 
 @media (max-width: 680px) {
     header {
-        flex-direction: column;;
+        flex-direction: column;
     }
     nav {
         padding: 10px 0px;
     }
+} */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.logo img{
+  height: 50px;
+  padding: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-color: #14161a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  min-height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  font-weight: 600;
+  padding-right: 11px;
+}
+
+nav a:hover {
+  color: blueviolet;
+}
+
+@media (max-width: 680px){
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
+  }
 }

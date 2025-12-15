@@ -85,7 +85,6 @@ body {
 } */
 /* -----------------------------------------------------------------------------*/
 body {
-  background-color: black;
   margin: 0px;
   box-sizing: border-box;
   font-family: sans-serif;
@@ -150,7 +149,7 @@ body {
   height: 200px;
   border-radius: 20px;
 } */
-
+/* -------------------------------------------------------------------
 .padre {
     width: 200px;
     background-color: red;
@@ -165,4 +164,37 @@ body {
     border-radius: 15px;
     position: absolute;
     bottom: 0;
+}
+--------------------------------------------------------------------------- */
+
+.padre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.hijo {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.hijo::before {
+  content: "before";
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+}
+
+.hijo::after {
+  content: "after";
+  background-color: violet;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
 }
