@@ -7,11 +7,12 @@
 
 body {
   background-color: #161623;
-  min-width: 100vh;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -22,9 +23,8 @@ body {
   width: 320px;
   height: 450px;
   position: relative;
-  border-radius: 20px;
+  border-radius: 22px;
   overflow: hidden;
-  margin-top: 50%;
 }
 .container .card::before {
   content: "";
@@ -170,4 +170,8 @@ body {
   transition: 0.5s;
   opacity: 0;
   margin-top: 10px;
+}
+.container .card .contentBx a:hover {
+  background-color: #b6fcfd;
+  transition: 0s;
 }/*# sourceMappingURL=styles.css.map */
